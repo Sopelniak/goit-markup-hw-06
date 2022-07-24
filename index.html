@@ -22,7 +22,9 @@
     <header>
       <div class="conteiner header-conteiner">
         <nav class="header-nav">
-          <a href="./index.html" class="logo header-logo"><span class="logo-web">Web</span>Studio</a>
+          <a href="./index.html" class="logo header-logo"
+            ><span class="logo-web">Web</span>Studio</a
+          >
           <ul class="site-nav">
             <li class="item"><a href="./index.html" class="current">Студия</a></li>
             <li class="item"><a href="./portfolio.html">Портфолио</a></li>
@@ -49,6 +51,7 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="hero section">
         <div class="hero-bg">
@@ -56,6 +59,7 @@
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
+
       <section class="advantage section">
         <div class="conteiner">
           <h2 class="visually-hidden">Наши преимущества</h2>
@@ -85,6 +89,7 @@
           </ul>
         </div>
       </section>
+
       <section class="activities section">
         <div class="conteiner">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -104,6 +109,7 @@
           </ul>
         </div>
       </section>
+
       <section class="teem section">
         <div class="conteiner">
           <h2 class="section-title">Наша команда</h2>
@@ -251,6 +257,7 @@
           </ul>
         </div>
       </section>
+
       <section class="clients section">
         <div class="conteiner">
           <h2>Постоянные клиенты</h2>
@@ -301,44 +308,113 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="conteiner">
-        <div>
-          <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
-          <address>г. Киев, пр-т Леси Украинки, 26</address>
-          <ul>
-            <li>
-              <a href="mailto:info@example.com" class="footer-cont">info@example.com</a>
-            </li>
-            <li><a href="tel:+380991111111" class="footer-cont">+38 099 111 11 11</a></li>
-          </ul>
+        <div class="groop">
+          <div>
+            <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+            <address>г. Киев, пр-т Леси Украинки, 26</address>
+            <ul>
+              <li>
+                <a href="mailto:info@example.com" class="footer-cont">info@example.com</a>
+              </li>
+              <li><a href="tel:+380991111111" class="footer-cont">+38 099 111 11 11</a></li>
+            </ul>
+          </div>
+          <div class="social-networks">
+            <p class="footer-title">присоединяйтесь</p>
+            <ul>
+              <li>
+                <a class="social-networks-icon instagram" href=""></a>
+              </li>
+              <li>
+                <a class="social-networks-icon tweeter" href=""></a>
+              </li>
+              <li>
+                <a class="social-networks-icon facebook" href=""></a>
+              </li>
+              <li>
+                <a class="social-networks-icon linkedin" href=""></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="social-networks">
-          <p>присоединяйтесь</p>
-          <ul>
-            <li>
-              <a class="social-networks-icon instagram" href=""></a>
-            </li>
-            <li>
-              <a class="social-networks-icon tweeter" href=""></a>
-            </li>
-            <li>
-              <a class="social-networks-icon facebook" href=""></a>
-            </li>
-            <li>
-              <a class="social-networks-icon linkedin" href=""></a>
-            </li>
-          </ul>
-        </div>
+        <form name="subscribe" autocomplete="on">
+          <b class="footer-title">Подпишитесь на рассылку</b>
+          <label>
+            <input class="footer-input" type="email" name="user-email" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="button footer__subscribe--btn">
+            Подписаться
+            <svg class="footer__subscribe--icon">
+              <use href="./images/icons.svg#icon-modal-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
-          <img class="close-icon" src="./images/close.svg" alt="icon">
+          <svg class="close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
         </button>
+        <form class="form" name="сontact-details" autocomplete="on">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="form-field">
+            <label class="form-label">
+              <span class="form-label-text">Имя</span>
+              <input class="form-input" type="text" name="name" />
+              <svg class="form-icon form-icon-name">
+                <use href="./images/icons.svg#icon-modal-name"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="form-field">
+            <label class="form-label"
+              >Телефон
+              <input class="form-input" type="tel" name="tel" />
+              <svg class="form-icon form-icon-tel">
+                <use href="./images/icons.svg#icon-modal-tel"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="form-field">
+            <label class="form-label"
+              >Почта
+              <input class="form-input" type="email" name="email" />
+              <svg class="form-icon form-icon-email">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </label>
+          </div>
+          <label class="form-label"
+            >Комментарий
+            <textarea
+              class="form-input form-textarea"
+              name="comment"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <div class="form-checkbox">
+            <label class="label-checkbox">
+              <input class="checkbox visually-hidden" type="checkbox" name="checkbox" />
+              <span class="checkbox-icon"></span>
+              Соглашаюсь с рассылкой и принимаю
+            </label>
+            <a class="checkbox-link" href="">Условия договора</a>
+          </div>
+          <button class="button form-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

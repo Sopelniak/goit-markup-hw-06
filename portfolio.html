@@ -211,33 +211,47 @@
     </main>
     <footer>
       <div class="conteiner">
-        <div>
-          <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
-          <address>г. Киев, пр-т Леси Украинки, 26</address>
-          <ul>
-            <li>
-              <a href="mailto:info@example.com" class="footer-cont">info@example.com</a>
-            </li>
-            <li><a href="tel:+380991111111" class="footer-cont">+38 099 111 11 11</a></li>
-          </ul>
+        <div class="groop">
+          <div>
+            <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+            <address>г. Киев, пр-т Леси Украинки, 26</address>
+            <ul>
+              <li>
+                <a href="mailto:info@example.com" class="footer-cont">info@example.com</a>
+              </li>
+              <li><a href="tel:+380991111111" class="footer-cont">+38 099 111 11 11</a></li>
+            </ul>
+          </div>
+          <div class="social-networks">
+            <p class="footer-title">присоединяйтесь</p>
+            <ul>
+              <li>
+                <a class="social-networks-icon instagram" href=""></a>
+              </li>
+              <li>
+                <a class="social-networks-icon tweeter" href=""></a>
+              </li>
+              <li>
+                <a class="social-networks-icon facebook" href=""></a>
+              </li>
+              <li>
+                <a class="social-networks-icon linkedin" href=""></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="social-networks">
-          <p>присоединяйтесь</p>
-          <ul>
-            <li>
-              <a class="social-networks-icon instagram" href=""></a>
-            </li>
-            <li>
-              <a class="social-networks-icon tweeter" href=""></a>
-            </li>
-            <li>
-              <a class="social-networks-icon facebook" href=""></a>
-            </li>
-            <li>
-              <a class="social-networks-icon linkedin" href=""></a>
-            </li>
-          </ul>
-        </div>
+        <form name="subscribe" autocomplete="on">
+          <b class="footer-title">Подпишитесь на рассылку</b>
+          <label>
+            <input class="footer-input" type="email" name="user-email" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="button footer__subscribe--btn">
+            Подписаться
+            <svg class="footer__subscribe--icon">
+              <use href="./images/icons.svg#icon-modal-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
