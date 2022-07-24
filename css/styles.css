@@ -588,9 +588,6 @@ footer li:not(:last-child) {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input:hover {
-  outline: 1px solid rgba(33, 150, 243, 0.5);
-}
 .footer-input:focus {
   outline: 1px solid var(--accent-color);
 }
@@ -728,8 +725,7 @@ footer li:not(:last-child) {
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus,
-.form-input:hover {
+.form-input:focus {
   outline: 1px solid var(--accent-color);
 }
 
